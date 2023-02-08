@@ -1,0 +1,116 @@
+body {
+    font-family: overpass;
+    margin: 0;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.container {
+    display: flex;
+    background-color: hsl(213, 19%, 18%);
+    width: 300px;
+    height: 300px;
+    margin: 25vh auto;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.star {
+    display: flex;
+    background-color: hsl(217, 12%, 63%, 10%);
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.numbers {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    border: none;
+    height: 50px;
+    padding: 10px 0px 10px;
+    align-items: center;
+}
+
+#opt1, #opt2, #opt3, #opt4, #opt5 {
+    border: none;
+    background-color: hsl(217, 12%, 63%, 10%);
+    border-radius: 50px;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    color: hsl(217, 12%, 63%);
+    transition: 0.3s all ease-in-out;
+}
+
+#opt1:hover, #opt2:hover, #opt3:hover, #opt4:hover, #opt5:hover {
+    background-color: hsl(25, 97%, 53%);
+}
+
+#submit {   
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 50px;
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.05s all ease-in-out;
+}
+
+#submit:hover {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.rating-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.rating-end.aberto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    text-align: center;
+    visibility: visible;
+}
+
+.rating-image {
+    margin: 0 auto;
+    width: 150px;
+    padding-top: 0px;
+}
+
+.rating-text {
+    display: flex;
+    margin: 30px auto 10px;
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(217, 12%, 63%, 10%);
+    width: 170px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
